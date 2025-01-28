@@ -18,7 +18,7 @@ export function CartModal(props) {
                                 <img src={item.image} alt={item.title} className='max-h-16 w-18 object-contain' />
                                 <div>
                                     <h3 className='font-semibold line-clamp-1 w-48' title={item.title}>{item.title}</h3>
-                                    <p className='text-gray-600'>{item.price} x {item.quantity}</p>
+                                    <p className='text-gray-600'>₹ {item.price} x {item.quantity}</p>
                                 </div>
                             </div>
                             <button onClick={() => props.removeCart(item)} className='text-red-500 hover:text-red-700'>Remove</button>
